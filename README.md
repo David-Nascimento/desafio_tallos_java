@@ -35,28 +35,29 @@ E para alternar entre os navegadores, substitua na mesma classe o Browser Defaul
 ### Planejamento dos Testes
 Mapeando Cenários de Teste
 
-_Funcionalidade: _
+_Funcionalidade: Doação Por Tipo
+	Eu como usuario da pagina do Vitrine Social
+	Quero ver a lista de das categorias de doações
+	para criar uma nova doação _
 
-* Cenário: 
-* Cenário: 
-* Cenário: 
-* Cenário:
+* Cenário: Verifica se existe doação
+* Cenário: Solicitacoes Recentes
  
-_Funcionalidade: _
+_Funcionalidade: Entre em contato
+	Eu como usuario da pagina do Vitrine Social
+	Quero ter acesso a tela de entrar em contato 
+	para enviar alguma sugesta _
 
-* Cenário: 
-* Cenário: 
-* Cenário: 
-* Cenário: 
+* Cenário: Envia uma sugestao com sucesso
 
 ###### Criando as Features de Teste
 Tendo em mãos os Cenários de cada fluxos de teste (fluxo base e alternativos), comecei a escrita das features em ***gherkin*** tendo como base o ***BDD***:
 
 ```
-/src/test/resources/features/.feature
+/src/test/resources/features/entrarEmContato.feature
 ```
 ```
-/src/test/resources/features/.feature
+/src/test/resources/features/paginaInicial.feature
 ```
 ### Setup da IDE e Projeto de Automação
 ###### Criar Projeto no Eclipse
