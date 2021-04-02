@@ -9,3 +9,9 @@ Funcionalidade: Doação Por Tipo
 		Dado que eu acesse a pagina Vitrine Social
 		Quando eu estiver na pagira home
 		Entao devo ver se existe alguma doacao por tipo
+		
+		@SolicitacoesRecentes
+	Cenario: Solicitacoes Recentes
+		Dado que eu acesse a pagina Vitrine Social
+		Quando eu estiver na pagira home
+		Entao devo ver se exite alguma solicitacao Recente
