@@ -4,24 +4,26 @@ import baseClass.BaseSteps;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
-import pageObjects.VerificaTipoDeDoacaoPage;
+import pageObjects.CategoriaDoacaoPage;
 
-public class VerificaTipoDeDoacao extends BaseSteps {
+public class CategoriaDoacao extends BaseSteps {
 	
-	VerificaTipoDeDoacaoPage paginaInicial = new VerificaTipoDeDoacaoPage(BaseSteps.browser);
+	CategoriaDoacaoPage paginaInicial = new CategoriaDoacaoPage(BaseSteps.browser);
 	
 	@Dado("^que eu acesse a pagina Vitrine Social$")
 	public void queEuAcesseAPaginaVitrineSocial() throws Throwable {
+		BaseSteps.screenShotNow();
 		paginaInicial.abrirPagina();
+		
 	}
 
 	@Quando("^eu estiver na pagira home$")
 	public void euEstiverNaPagiraHome() throws Throwable {
-	    
+	    paginaInicial.validaPaginaInicial();
 	}
 
-	@Entao("^devo ver se existe alguma doa??o por tipo$")
-	public void devoVerSeExisteAlgumaDoaOPorTipo() throws Throwable {
+	@Entao("^devo ver se existe alguma doacao por tipo$")
+	public void devoVerSeExisteAlgumaDocaOPorTipo() throws Throwable {
 	   
 	}
 	
