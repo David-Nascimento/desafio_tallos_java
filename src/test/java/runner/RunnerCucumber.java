@@ -10,7 +10,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features",
 		glue = "stepsDefinitions",
-		plugin = {"pretty",
+		tags = "@VerificaDoacao",
+		plugin = {
+				"pretty",
 		"html:target/cucumber-reports",
 		"junit:target/cucumber-reports/cucumber.xml",
 		"json:target/cucumber-reports/cucumber.json"

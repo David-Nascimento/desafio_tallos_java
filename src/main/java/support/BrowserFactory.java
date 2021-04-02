@@ -15,15 +15,15 @@ public class BrowserFactory {
 	}
 
 	public static WebDriver GetBrownser() {
-		return GetBrownser(Browser.CHROME); // Browser Default
+		return GetBrownser(Browser.FIREFOX); // Browser Default
 	}
 
 	public static WebDriver GetBrownser(Browser browserUser) {
 		WebDriver resultBrowser;
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\webdrivers\\chromedriver.exe");
-		// System.setProperty("webdriver.gecko.driver",  "src\\test\\resources\\webdrivers\\geckodriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\webdrivers\\chromedriver.exe");
+		 System.setProperty("webdriver.gecko.driver",  "src\\test\\resources\\webdrivers\\geckodriver.exe");
 
-		switch (browserUser) {
+		 switch (browserUser) {
 			case CHROME:
 				resultBrowser = new ChromeDriver();
 				resultBrowser.manage().window().maximize();
